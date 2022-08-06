@@ -1,4 +1,4 @@
-package me.dentayyy.minecraftinjector;
+package me.quidd.minecraftinjector;
 
 import java.io.File;
 
@@ -8,7 +8,7 @@ import com.sun.tools.attach.VirtualMachineDescriptor;
 public class Injector {
 
     public static void inject() throws Exception {
-        System.out.println("Injecting...");
+        System.out.println("Currently Injecting");
         String pid = null;
         for (VirtualMachineDescriptor jvm : VirtualMachine.list()) {
             System.out.println(jvm.displayName());
@@ -22,7 +22,7 @@ public class Injector {
             vm.loadAgent(new File("agent.jar").getAbsolutePath());
             vm.detach();
         }
-        System.out.println("Injected!");
+        System.out.println("Injection was successful.");
     }
 
 }
