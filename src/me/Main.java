@@ -1,4 +1,4 @@
-package me.dentayyy.minecraftinjector;
+package me.quidd.minecraftinjector;
 
 public class Main {
 
